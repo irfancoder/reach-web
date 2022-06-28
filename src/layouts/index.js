@@ -4,4 +4,4 @@
  * export { default as LayoutName } from './layout-name.vue'
  */
 
-export { default as Guest } from './guest.vue'
+export { default as Master } from './master.vue'

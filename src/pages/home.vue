@@ -1,31 +1,30 @@
+<!-- @format -->
+
 <template>
-    <div id="base">
-        <p>ii-vite stands for irfan ismail's vite.</p>
-        <p>This boilerplate is equipped with:</p>
+    <div>
+        <Hero></Hero>
+        <div class="p-24 bg-primary-700">stats go here</div>
 
-        <ul class="p-8 list-disc">
-            <li>Vue 3</li>
-            <li>Vue Layout</li>
-            <li>Vue Router</li>
-            <li>Pinia</li>
-            <li>Sass</li>
-            <li>TailwindCSS</li>
-            <li>Vite</li>
-
-            <li>Standard Version</li>
-        </ul>
+        <Section></Section>
+        <Slider></Slider>
+        <Section :map="true"></Section>
     </div>
 </template>
 
 <script>
+    import { Section, Hero, Slider } from '@/components'
+
+    export default {
+        components: {
+            Section,
+            Hero,
+            Slider
+        }
+    }
 </script>
 
 <style>
-#base {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-top: 60px;
-    @apply container mx-auto p-16;
-}
+    div {
+        @apply bg-yellow-50;
+    }
 </style>

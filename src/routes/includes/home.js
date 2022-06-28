@@ -1,9 +1,9 @@
 import { makeRoute } from '@/routes/utils'
 import { Home } from '@/pages'
-import { Guest } from '@/layouts'
+import { Master } from '@/layouts'
 
 const routes = [
-    makeRoute('/', 'home:index', Home, [Guest])
+    makeRoute('/', 'home:index', Home, [Master])
 ]
 
 export default routes
